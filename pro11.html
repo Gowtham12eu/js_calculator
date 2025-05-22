@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <link rel="stylesheet"  href="pro11.css">
+    </head>
+    <body>
+        <div class="project">
+        <h1>CALCULATOR</h1>
+        <input id="int" class="input1">
+        <div class="button">
+        <button id="but" onclick="change('1')" class="btn1">1</button>
+        </div>
+        <div class="button1">
+        <button id="but" onclick="change('2')" class="btn2">2</button>
+        </div>
+        <div class="button2">
+        <button id="but" onclick="change('3')" class="btn3">3</button><br>
+        </div>
+        <div class="button3">
+        <button id="but" onclick="change('4')" class="btn4">4</button>
+        <div>
+        <div class="button4">
+        <button id="but" onclick="change('5')" class="btn5">5</button>
+        </div>
+        <div class="button5">
+        <button id="but" onclick="change('6')" class="btn6">6</button><br>
+        </div>
+        <div class="button6">
+        <button id="but" onclick="change('7')" class="btn7">7</button>
+        </div>
+        <div class="button7">
+        <button id="but" onclick="change('8')" class="btn8">8</button>
+        </div>
+        <div class="button8">
+        <button id="but" onclick="change('9')" class="btn9">9</button><br>
+        </div>
+        <div class="button9">
+        <button id="but" onclick="change('0')" class="btn0">0</button>
+        </div>
+        <div class="button0">
+        <button id="but" onclick="change('+')" class="btn11">+</button>
+        </div>
+        <div class="button11">
+        <button id="but" onclick="change('-')" class="btn12">-</button><br>
+        </div>
+        <div class="button12">
+        <button id="but" onclick="change('*')" class="btn13">*</button>
+        </div>
+        <div class="button13">
+        <button id="but" onclick="change('%')" class="btn14">%</button>
+        </div>
+        <div class="button14">
+        <button id="but" onclick="chang('C')" class="btn15">C</button><br>
+        </div>
+        <div class="button15">
+        <button id="but" onclick="chan('=')" class="btn16">=</button>
+    </div>
+</div>
+
+    </body>
+
+    <script>
+        var A=document.getElementById("int")
+        var b=document.getElementById("but")
+
+        function change(value)
+        {
+            int.value +=value;
+        }
+        function chang(value)
+        {
+            int.value=""
+        }
+        function chan(value)
+        {
+            try{
+                int.value=eval(int.value)
+            }
+            catch{
+                int.value="error"
+            }
+        }
+    </script>
+</html>
